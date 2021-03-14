@@ -1,7 +1,7 @@
 <?php
 function censorship_machine($sentence)
 {
-    $dictionary = array("JD","kurwo","jebana");
+    $dictionary = array("kurka");
     foreach ($dictionary as $word)
     {
         $size = strlen($word);
@@ -13,5 +13,5 @@ function censorship_machine($sentence)
     }
     return $sentence;
 }
-echo censorship_machine("Sirus ty kurwo jebana");
+echo censorship_machine("kurka wodna");
 ?>
