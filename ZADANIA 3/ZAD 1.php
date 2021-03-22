@@ -15,7 +15,7 @@ function losowe(&$tablica)
     echo("<br>");
     echo("<br>");
 }
-function Which_table_biggest_number1($tablica)
+function DOWHILE_($tablica)
 {
     $a = 0;
     $b = 1;
@@ -30,7 +30,7 @@ function Which_table_biggest_number1($tablica)
     echo("<br>");
     echo "DO WHILE: ". $tablica[0];
 }
-function Which_table_biggest_number2($tablica)
+function WHILE_($tablica)
 {
 	$a = 0;
     $b = 1;
@@ -47,7 +47,7 @@ function Which_table_biggest_number2($tablica)
     echo "WHILE: ". $tablica[0];
 }
 
-function Which_table_biggest_number3($tablica)
+function FOR_($tablica)
 {
 	$a = 0;
     $b = 1;
@@ -63,10 +63,11 @@ function Which_table_biggest_number3($tablica)
     echo("<br>");
     echo "FOR: ". $tablica[0];
 }
-function Which_table_biggest_number4($tablica)
+function FOREACH_($tablica)
 {
 	$a = 0;
     $b = 1;
+	$c=2;
 	foreach ($tablica as $i)
 		{
 			if ($tablica[$b] > $tablica[$a])
@@ -85,8 +86,8 @@ function Which_table_biggest_number4($tablica)
 
 $tablica = [];
 losowe($tablica);
-Which_table_biggest_number1($tablica);
-Which_table_biggest_number2($tablica);
-Which_table_biggest_number3($tablica);
-Which_table_biggest_number4($tablica);
+DOWHILE_($tablica);
+WHILE_($tablica);
+FOR_($tablica);
+FOREACH_($tablica);
 ?>
