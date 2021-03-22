@@ -19,8 +19,6 @@ function Which_table_biggest_number1($tablica)
 {
     $a = 0;
     $b = 1;
-        //while ($b <= 2)(trzeba dodać pod koniec $b++ {
-        //for ($b = 1; $b <= 2; $b++){
     do {
         if ($tablica[$b] > $tablica[$a])
 		{
@@ -69,14 +67,13 @@ function Which_table_biggest_number4($tablica)
 {
 	$a = 0;
     $b = 1;
-	$c = 2;
 	foreach ($tablica as $i)
 		{
 			if ($tablica[$b] > $tablica[$a])
 			{
 				$tablica[$a]=$tablica[$b];
 			}
-			if ($tablica[$c] > $tablica[$b])
+			elseif ($tablica[$c] > $tablica[$b])
 			{
 				$tablica[$b]=$tablica[$c];
 			}
